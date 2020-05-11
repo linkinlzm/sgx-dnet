@@ -1,11 +1,11 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  * SGX utils for darknet port
  */
 
 //At the time of this porting Intel SGX does not support CUDA
 //Therefore all GPU related functionality has been stripped off
-//PYuhala Feb 2020
+//Pxxx Feb 2020
 
 #ifndef DNET_SGX_UTILS_H
 #define DNET_SGX_UTILS_H

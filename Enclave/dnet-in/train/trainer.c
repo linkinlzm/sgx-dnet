@@ -3,15 +3,15 @@
 #include "darknet.h"
 #include "trainer.h"
 
-#define CIFAR_WEIGHTS "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/backup/cifar.weights"
-#define TINY_WEIGHTS "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/backup/tiny.weights"
-#define MNIST_WEIGHTS "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/backup/mnist.weights"
+#define CIFAR_WEIGHTS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/backup/cifar.weights"
+#define TINY_WEIGHTS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/backup/tiny.weights"
+#define MNIST_WEIGHTS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/backup/mnist.weights"
 
 //global network model
 //network *net = NULL;
 
 /**
- * PYuhala
+ * Pxxx
  * The network training avg accuracy should decrease
  * as the network learns
  * Batch size: the number of data samples read for one training epoch/iteration
@@ -261,7 +261,7 @@ void test_fio()
     ocall_close_file();
 }
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  * Knowledge distillation involves training a smaller network with 
  * a larger network. 
  * 
@@ -276,7 +276,7 @@ void test_fio()
     network *net = load_network(cfgfile, weightfile, 0);
     printf("Learning Rate: %g, Momentum: %g, Decay: %g\n", net->learning_rate, net->momentum, net->decay);
 
-    char *backup_directory = "/home/ubuntu/peterson/sgx-dnet/backup/";
+    char *backup_directory = "/home/ubuntu/xxx/sgx-dnet/backup/";
     int classes = 10;
     int N = 50000;
 

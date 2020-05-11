@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 #ifndef DNET_TYPES_H
@@ -554,7 +554,7 @@ typedef struct
 } section;
 
 /**
- * Author: Pyuhala 
+ * Author: Pxxx 
  * Added these for file I/O ocalls * 
  * These are the common flags used in darknet
  * Other flags can be added

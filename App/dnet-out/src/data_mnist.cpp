@@ -1,7 +1,7 @@
 /*
  * Created on Wed Feb 19 2020
  *
- * Copyright (c) 2020 Peterson Yuhala, IIUN
+ * Copyright (c) 2020 xxx xxx, IIUN
  */
 
 #include "data_mnist.h"
@@ -21,7 +21,7 @@ uint32_t swap_bytes(uint32_t val)
 }
 
 /**
- * Author: PYuhala
+ * Author: Pxxx
  * Mnist metadata:
  * There 4 files after decompressing are: 
  * train-images-idx3-ubyte: training set images (45MB)
@@ -129,7 +129,7 @@ matrix load_mnist_labels(std::string path)
      */
 
     /**
-     * PYuhala
+     * Pxxx
      * 1 byte (sizeof char) is enough to store numbers from 0 to 9
      */
     char label_class;

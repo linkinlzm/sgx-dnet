@@ -1,7 +1,7 @@
 /*
  * Created on Wed Feb 19 2020
  *
- * Copyright (c) 2020 Peterson Yuhala, IIUN
+ * Copyright (c) 2020 xxx xxx, IIUN
  */
 
 #ifndef DATA_MNIST_H

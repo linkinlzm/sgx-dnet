@@ -22,16 +22,16 @@ data training_data, test_data;
 /**
  * Config files
  */
-#define CIFAR_CFG_FILE "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/cfg/cifar.cfg"
-#define CIFAR_TEST_DATA "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/cifar/cifar-10-batches-bin/test_batch.bin"
-#define TINY_IMAGE "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/person.jpg"
-#define TINY_CFG "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/cfg/tiny.cfg"
-#define DATA_CFG "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/tiny.data"
-#define MNIST_TRAIN_IMAGES "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/mnist/train-images-idx3-ubyte"
-#define MNIST_TRAIN_LABELS "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/mnist/train-labels-idx1-ubyte"
-#define MNIST_TEST_IMAGES "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/mnist/t10k-images-idx3-ubyte"
-#define MNIST_TEST_LABELS "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/data/mnist/t10k-labels-idx1-ubyte"
-#define MNIST_CFG "/home/ubuntu/peterson/sgx-dnet/App/dnet-out/cfg/mnist.cfg"
+#define CIFAR_CFG_FILE "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/cfg/cifar.cfg"
+#define CIFAR_TEST_DATA "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/cifar/cifar-10-batches-bin/test_batch.bin"
+#define TINY_IMAGE "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/person.jpg"
+#define TINY_CFG "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/cfg/tiny.cfg"
+#define DATA_CFG "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/tiny.data"
+#define MNIST_TRAIN_IMAGES "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/mnist/train-images-idx3-ubyte"
+#define MNIST_TRAIN_LABELS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/mnist/train-labels-idx1-ubyte"
+#define MNIST_TEST_IMAGES "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/mnist/t10k-images-idx3-ubyte"
+#define MNIST_TEST_LABELS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/data/mnist/t10k-labels-idx1-ubyte"
+#define MNIST_CFG "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/cfg/mnist.cfg"
 
 /* Thread function --> only for testing purposes */
 void thread_func()

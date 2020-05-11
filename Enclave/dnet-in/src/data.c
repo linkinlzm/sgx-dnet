@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  * Purpose: contains data related functionality supported in 
  * the enclave runtime. All functionality commented out is implemented
  * by the support library outside the enclave

@@ -1,12 +1,12 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 
 /*
  * Created on Fri Feb 14 2020
  *
- * Copyright (c) 2020 Peterson Yuhala, IIUN
+ * Copyright (c) 2020 xxx xxx, IIUN
  */
 
 #ifndef DARKNET_API_IN
