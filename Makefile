@@ -1,6 +1,6 @@
 #
 # Author: xxx xxx
-# Copyright (C) 2020 IIUN. All rights reserved. 
+# Copyright (C) 2020 xxxx. All rights reserved. 
 #
 
 ######## SGX SDK Settings ########

@@ -6,7 +6,7 @@
 /*
  * Created on Fri Feb 14 2020
  *
- * Copyright (c) 2020 xxx xxx, IIUN
+ * Copyright (c) 2020 xxx xxx, xxxx
  */
 
 #ifndef DARKNET_API_IN

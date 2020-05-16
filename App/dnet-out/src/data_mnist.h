@@ -1,7 +1,7 @@
 /*
  * Created on Wed Feb 19 2020
  *
- * Copyright (c) 2020 xxx xxx, IIUN
+ * Copyright (c) 2020 xxx xxx, xxxx
  */
 
 #ifndef DATA_MNIST_H
