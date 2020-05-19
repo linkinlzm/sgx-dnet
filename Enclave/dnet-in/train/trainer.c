@@ -2,6 +2,7 @@
 #include "dnet_sgx_utils.h"
 #include "darknet.h"
 #include "trainer.h"
+#include "checks.h"
 
 #define CIFAR_WEIGHTS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/backup/cifar.weights"
 #define TINY_WEIGHTS "/home/ubuntu/xxx/sgx-dnet/App/dnet-out/backup/tiny.weights"
@@ -21,7 +22,13 @@
 void ecall_trainer(list *sections, data *training_data, int pmem)
 {
 
-    //test_fio();
+    CHECK_REF_POINTER(sections, sizeof(list));
+    CHECK_REF_POINTER(training_data, sizeof(data));
+    /**
+     * load fence after pointer checks ensures the checks are done 
+     * before any assignment 
+     */
+    sgx_lfence();
     train_mnist(sections, training_data, pmem);
     //train_cifar(sections, training_data, pmem);
 }
@@ -117,11 +124,26 @@ void train_cifar(list *sections, data *training_data, int pmem)
 
 void ecall_tester(list *sections, data *test_data, int pmem)
 {
+    CHECK_REF_POINTER(sections, sizeof(list));
+    CHECK_REF_POINTER(test_data, sizeof(data));   
+    /**
+     * load fence after pointer checks ensures the checks are done 
+     * before any assignment 
+     */
+    sgx_lfence();
     test_mnist(sections, test_data, pmem);
 }
 
 void ecall_classify(list *sections, list *labels, image *im)
 {
+    CHECK_REF_POINTER(sections, sizeof(list));
+    CHECK_REF_POINTER(labels, sizeof(list));
+    CHECK_REF_POINTER(im, sizeof(image));
+    /**
+     * load fence after pointer checks ensures the checks are done 
+     * before any assignment 
+     */
+    sgx_lfence();
     classify_tiny(sections, labels, im, 5);
 }
 
