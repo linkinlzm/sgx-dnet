@@ -12,10 +12,10 @@
 #include <stdio.h>
 //#include <thread>
 
-void printf(const char *fmt, ...)
-{
-    PRINT_BLOCK();
-}
+// void printf(const char *fmt, ...)
+// {
+//     PRINT_BLOCK();
+// }
 
 void sgx_printf(const char *fmt, ...)
 {
