@@ -69,9 +69,7 @@ App_Include_Paths := -IInclude -IApp -I$(SGX_SDK)/include
 App_C_Flags := -fPIC -Wno-attributes $(App_Include_Paths) \
 	-flegacy-pass-manager \
 	-Xclang -load -Xclang $(SGX_SDK)/lib64/libSGXFuzzerPass.so \
-	-fsanitize-coverage=inline-8bit-counters,bb,no-prune,pc-table,trace-cmp \
-	-fprofile-instr-generate \
-	-fcoverage-mapping
+	-fsanitize-coverage=inline-8bit-counters,bb,no-prune,pc-table,trace-cmp
 
 # Three configuration modes - Debug, prerelease, release
 #   Debug - Macro DEBUG enabled.
@@ -94,8 +92,7 @@ App_Link_Flags := -L$(SGX_LIBRARY_PATH) -l$(Urts_Library_Name) -lpthread -lm \
 	-lSGXFuzzerRT \
 	-lcrypto \
 	-lboost_program_options \
-	-rdynamic \
-	-fprofile-instr-generate
+	-rdynamic
 
 ifneq ($(SGX_MODE), HW)
 	App_Link_Flags += -lsgx_uae_service_sim
