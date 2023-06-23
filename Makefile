@@ -5,7 +5,7 @@
 
 ######## SGX SDK Settings ########
 
-SGX_SDK ?= $(abspath ../../SGXSan/install)
+SGX_SDK ?= $(abspath ../../install)
 SGX_MODE ?= SIM
 SGX_ARCH ?= x64
 SGX_DEBUG ?= 1
