@@ -1,3 +1,11 @@
+#if defined(__cplusplus)
+extern "C"{
+#endif
+void SGXSanLogEnter(const char *str);
+#if defined(__cplusplus)
+}
+#endif
+#define LogEnter SGXSanLogEnter
 
 #include "dnet_sgx_utils.h"
 #include "darknet.h"
@@ -21,6 +29,7 @@
 
 void ecall_trainer(list *sections, data *training_data, int pmem)
 {
+    LogEnter(__func__);
 
     CHECK_REF_POINTER(sections, sizeof(list));
     CHECK_REF_POINTER(training_data, sizeof(data));
@@ -124,6 +133,7 @@ void train_cifar(list *sections, data *training_data, int pmem)
 
 void ecall_tester(list *sections, data *test_data, int pmem)
 {
+    LogEnter(__func__);
     CHECK_REF_POINTER(sections, sizeof(list));
     CHECK_REF_POINTER(test_data, sizeof(data));   
     /**
@@ -136,6 +146,7 @@ void ecall_tester(list *sections, data *test_data, int pmem)
 
 void ecall_classify(list *sections, list *labels, image *im)
 {
+    LogEnter(__func__);
     CHECK_REF_POINTER(sections, sizeof(list));
     CHECK_REF_POINTER(labels, sizeof(list));
     CHECK_REF_POINTER(im, sizeof(image));

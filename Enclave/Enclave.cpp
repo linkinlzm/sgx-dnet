@@ -1,3 +1,11 @@
+#if defined(__cplusplus)
+extern "C"{
+#endif
+void SGXSanLogEnter(const char *str);
+#if defined(__cplusplus)
+}
+#endif
+#define LogEnter SGXSanLogEnter
 /*
  * Created on Fri Feb 14 2020
  *
@@ -24,6 +32,7 @@ void sgx_printf(const char *fmt, ...)
 
 void empty_ecall()
 {
+    LogEnter(__func__);
     sgx_printf("Inside empty ecall\n");
 }
 
